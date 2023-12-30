@@ -1,0 +1,263 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+*{
+   
+    box-sizing: border-box;
+    font-family: 'Righteous', cursive;
+    margin: 0;
+    padding: 0;
+}
+html{
+    /* me permite deslizar cuando hago clic en los links del menu */
+    scroll-behavior: smooth;
+}
+
+/* MENU */
+.contenedor-header{
+    background: #000000;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.contenedor-header header .logo a{
+    font-family: 'Righteous';
+    font-size: 36px;
+    color:mediumorchid;
+    text-decoration: none;
+}
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+.contenedor-header header nav ul li a:hover{
+    color: mediumorchid;
+}
+.nav-responsive{
+    background-color: mediumorchid;
+    color:#fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+.mapa{
+    padding: 3em 0;
+    background: linear-gradient(#565656, mediumorchid) ;
+}
+
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear:left;
+    padding: 30px;
+}
+
+.sobremi{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+.sobremi .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+    
+    
+    
+}
+.sobremi h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 40px 0;
+
+}
+
+
+.sobremi .fila{
+    display: flex;
+    padding: 50px;
+}
+.sobremi .fila .col
+{height: 50%;
+    width: 50%;
+}
+.sobremi .fila .col h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+.sobremi .fila .col ul{
+    list-style: none;
+}
+.sobremi .fila .col ul li{
+    padding: 20px;
+    margin: 0px 0;
+}
+.sobremi .fila .col ul li strong{
+    display: inline-block;
+    color: mediumorchid;
+    width: 130px;
+}
+.sobremi .fila .col ul li span{
+    background-color: mediumorchid;
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.sobremi .fila .col .contenedor-intereses{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sobremi .fila .col .contenedor-intereses .interes{
+    width: 100px;
+    height: 100px;
+    background-color: #252A2E;
+    border-radius: 60px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}.sobremi .fila .col .contenedor-intereses .interes:hover{
+    background-color: mediumorchid;
+    transform: translateX(15px) rotate(360deg);
+    border-color:#dbdbdb;
+}
+.sobremi .fila .col .contenedor-intereses .interes i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+
+/* posicion de tecno-skills*/
+
+.tecno-skills{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    top: 20px;
+    position: relative;
+    left: 20px;
+    transition: 1s all;
+    cursor: pointer;
+}
+;
+ .sobremi.fila .col .tecno-skills ul li  :after{
+    transform: scale(1.2);
+    background: #dedede;
+    transform: translateX(15px) rotate(360deg);
+
+    
+}
+
+/*barra de progreso*/
+
+.skill {
+    margin: 20px;
+}
+
+.progress-bar {
+    background-color: #ccc;
+    height: 20px;
+    border-radius: 10px;
+    margin-top: 5px;
+    position: relative; /* Agregamos position:relative; */
+    overflow: hidden; /* Oculta el contenido que se desborda */
+}
+
+.progress {
+    background: mediumorchid;
+    height: 100%;
+    width: 0;
+    border-radius: 10px;
+    /* Eliminamos la propiedad de transición aquí */
+    position: absolute; /* Cambiamos la posición a absoluta */
+    top: 0;
+    left: 0;
+    animation: fillProgress 7s linear forwards; /* Agregamos una animación */
+}
+
+@keyframes fillProgress {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+/*iconos*/
+.skill h2{
+    text-align: left;
+    text-shadow: 
+    0 0 102px mediumorchid,
+    0 0 151px mediumorchid,
+    0 0 160px mediumorchid;
+
+    
+}
+
+.skill .iconos{
+    left: 85%;
+    position: absolute;
+    margin-top: -8%;
+    width: 80px;
+    height: 80px;
+}
+
+/*iconos ofimatica*/
+
+.skill .iconos-ofi3{
+    display: flex;
+    left: 65%;
+    position: absolute;
+    margin-top: -8%;
+    width: 80px;
+    height: 80px;
+    
+}
+
+.skill .iconos-ofi2{
+    display: flex;
+    left: 75%;
+    position: absolute;
+    margin-top: -8%;
+    width: 80px;
+    height: 80px;
+    
+}
+
+.skill .iconos-ofi1{
+    display: flex;
+    left: 85%;
+    position: absolute;
+    margin-top: -8%;
+    width: 80px;
+    height: 80px;
+    
+}
+

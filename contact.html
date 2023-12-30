@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+       <script src="https://kit.fontawesome.com/562477e374.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="color">
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">SEF<i class="fa-solid fa-paw-claws"></i></a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html" onclick="seleccionar()">Inicio</a></li>
+                    <li><a href="skills.html" onclick="seleccionar()">Skills</a></li>
+                    <li><a href="portafolio.html" onclick="seleccionar()">Proyectos</a></li>
+                    <li><a href="contact.html" onclick="seleccionar()">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+<!-- seccion de contactos  -->
+<div class="caja">
+    <div class="pedidos">
+       <h2 class="subtitulo2">Contact Me</h2>
+      <img src="img/DSC_1687 copy.jpg" alt="">
+
+      <main>
+      <form  action="https://formspree.io/f/mwkdqqja" method="post">
+        <div class="texto">
+        <label for="nombreapellido">Nombre y Apellido</label>
+        <input type="text" id="nombreapellido" class="input-padron" required name="name">
+
+        <label for="correoelectronico">Correo Electrónico</label>
+        <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com" name="email">
+
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX" name="tel">
+
+        <label for="mensaje">Mensaje</label>
+        <textarea cols="70" rows="10" id="mensaje" class="input-padron" required name="message"></textarea>
+        </div>
+        <fieldset>
+            
+            <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+            
+            <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Teléfono</label>
+            
+            <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+            
+        </fieldset>
+       
+        
+        <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir mensajes de una nueva novedad del proyecto ?</label>                
+        
+        <input type="submit" value="Enviar formulario" class="enviar">
+
+    </form>
+      </main>
+        </div>
+    </div>        
+
+</div>  
+</body>
+</html>
